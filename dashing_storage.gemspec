@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = DashingStorage::VERSION
   spec.authors       = ["Ben Colon"]
   spec.email         = ["ben@colon.com.fr"]
-  spec.description   = %q{Add storage feature to the Dashing dashboard (mongoDb support)}
+  spec.description   = %q{Add storage feature to the Dashing dashboard (mongodb support)}
   spec.summary       = %q{Add storage feature to the Dashing dashboard}
   spec.homepage      = ""
   spec.license       = "MIT"

@@ -18,7 +18,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add a database.yml file at the root of your Dashing dashboard source code with this structure :
+
+```
+development:
+  user:
+  password:
+  host1: localhost
+  port1: 27017
+  database: my_dashing_db
+
+production:
+  user: heroku
+  password: 1234567890
+  host1: linus.mongohq.com
+  port1: 10041
+  database: app1234567890
+```
+
+and now just call :
+
+DashingStorage.db['my_collection'].find...
+
+DashingStorage.db['my_collection'].insert...
 
 ## Contributing
 
