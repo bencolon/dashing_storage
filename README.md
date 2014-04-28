@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add a database.yml file at the root of your Dashing dashboard source code with this structure :
+Add a database.yml file at the root of your Dashing dashboard source code with this structure:
 
 ```
 development:
@@ -36,11 +36,18 @@ production:
   database: app1234567890
 ```
 
-and now just call :
+Whatever file you want to use this gem in, add:
 
+    require 'dashing_storage'
+
+And then just call:
+    
+```   
 DashingStorage.db['my_collection'].find...
 
 DashingStorage.db['my_collection'].insert...
+```
+More info at: http://docs.mongodb.org/manual/reference/crud/#query-and-data-manipulation-collection-methods
 
 ## Contributing
 
